@@ -2,12 +2,11 @@ import { assertEquals } from "$std/assert/mod.ts";
 
 import Person, { sayHello } from "./person.ts";
 
+Deno.test("sayHello function", () => {
+  const grace: Person = {
+    lastName: "Hooper",
+    "firstName": "Grace",
+  };
 
-Deno.test('sayHello function', () => {
-    const grace: Person = {
-        lastName: 'Hooper',
-        "firstName": 'Grace'
-    }
-
-    assertEquals('Hello, Grace!', sayHello(grace))
-})
+  assertEquals("Hello, Grace!", sayHello(grace));
+});
