@@ -1,6 +1,7 @@
 {
   "imports": {
-    "$std/": "https://deno.land/std@0.215.0/"
+    "$std/": "https://deno.land/std@0.215.0/",
+    "fmt/": "https://deno.land/std@0.215.0/fmt/"
   },
   "tasks": {
     "dev" : "deno run --watch server.ts",

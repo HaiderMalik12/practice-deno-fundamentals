@@ -1,4 +1,7 @@
 import Person, { sayHello } from "./person.ts";
+import { red } from "fmt/colors.ts";
+
+console.log(red("hello world I am in the red"));
 
 const ada: Person = {
   firstName: "Jane",
